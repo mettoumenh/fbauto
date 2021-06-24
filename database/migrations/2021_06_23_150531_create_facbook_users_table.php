@@ -23,7 +23,7 @@ class CreateFacbookUsersTable extends Migration
             $table->text('telephone');
             $table->text('proxy')->nullable();
             $table->bigInteger('country_id');
-            $table->boolean('status');
+            $table->boolean('status')->default(1);
             $table->timestamps();
         });
     }

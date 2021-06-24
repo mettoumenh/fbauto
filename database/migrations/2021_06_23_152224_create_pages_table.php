@@ -17,7 +17,7 @@ class CreatePagesTable extends Migration
             $table->id();
             $table->text('name');
             $table->text('uid');
-            $table->bigInteger('category_id');
+            $table->bigInteger('category_id')->default(1);
             $table->timestamps();
         });
     }

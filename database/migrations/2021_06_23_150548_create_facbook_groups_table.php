@@ -20,7 +20,7 @@ class CreateFacbookGroupsTable extends Migration
             $table->bigInteger('category_id');
             $table->text('proxy')->nullable();
             $table->bigInteger('country_id');
-            $table->boolean('status');
+            $table->boolean('status')->default(1);
             $table->timestamps();
         });
     }

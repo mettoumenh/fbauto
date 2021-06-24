@@ -21,6 +21,7 @@ class CreateSharePostPagesTable extends Migration
             $table->bigInteger('user_id');
             $table->bigInteger('page_id');
             $table->date('share_date');
+            $table->boolean('status')->default(1);
             $table->timestamps();
         });
     }

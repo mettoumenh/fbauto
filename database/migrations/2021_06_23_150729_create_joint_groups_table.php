@@ -18,7 +18,7 @@ class CreateJointGroupsTable extends Migration
             $table->bigInteger('user_id');
             $table->bigInteger('group_id');
             $table->date('join_group_date');
-            $table->boolean('status');
+            $table->boolean('status')->default(1);
             $table->timestamps();
         });
     }
